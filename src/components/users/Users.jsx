@@ -4,7 +4,7 @@ import User from "./user/User";
 
 const Blog = () => {
     const users = useLoaderData()
-    console.log(users)
+    
     return (
         <div>
             <div className=" bg-stone-200 min-h-96 my-5 p-5">

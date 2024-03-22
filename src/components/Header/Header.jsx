@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -7,10 +7,11 @@ const Header = () => {
         <div className="min-h-20  flex justify-between items-center border-b-[1px]  border-stone-300">
             <h2 className=" text-2xl font-bold">Router</h2>
             <ul className="flex font-semibold text-base capitalize w-1/3  justify-around">
-            <li> <Link to="/">Home</Link> </li>
-                <li><Link to="About">About</Link></li>
-                <li><Link to="Contact">Contect</Link></li>
-                <li><Link to="users">users</Link></li>
+            <li><NavLink exact to="/">Home</NavLink></li>
+      <li><NavLink to="/About">About</NavLink></li>
+      <li><NavLink to="/posts">Posts</NavLink></li>
+      <li><NavLink to="/Contact">Contact</NavLink></li>
+      <li><NavLink to="/users">Users</NavLink></li>
                 
 
                 
